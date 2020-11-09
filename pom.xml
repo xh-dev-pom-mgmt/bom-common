@@ -12,14 +12,14 @@
     </parent>
     <artifactId>bom-common</artifactId>
     <name>bom-common</name>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <description>Bom common, including common library for all general use case and inherited from bom-base for plugins</description>
 
     <scm>
-        <connection>scm:git:git://github.com/xh-dev-pom-mgmt/bom-base.git</connection>
-        <developerConnection>scm:git:ssh://github.com/xh-dev-pom-mgmt/bom-base.git</developerConnection>
-        <url>https://github.com/xh-dev-pom-mgmt/bom-base</url>
+        <connection>scm:git:git://github.com/xh-dev-pom-mgmt/bom-common.git</connection>
+        <developerConnection>scm:git:ssh://github.com:xh-dev-pom-mgmt/bom-common.git</developerConnection>
+        <url>https://github.com/xh-dev-pom-mgmt/bom-common</url>
     </scm>
     <dependencyManagement>
         <dependencies>
