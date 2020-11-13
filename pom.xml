@@ -8,21 +8,49 @@
     <parent>
         <groupId>dev.xethh.libs.toolkits</groupId>
         <artifactId>bom-base</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
+        <relativePath/>
     </parent>
     <artifactId>bom-common</artifactId>
     <name>bom-common</name>
-    <version>1.0.0</version>
 
-    <description>Bom common, including common library for all general use case and inherited from bom-base for plugins</description>
+    <description>Bom common defined common libraries for all general use case and basic imported base dependency of junit, slf4j and DateUtils.</description>
 
     <scm>
         <connection>scm:git:git://github.com/xh-dev-pom-mgmt/bom-common.git</connection>
         <developerConnection>scm:git:ssh://github.com:xh-dev-pom-mgmt/bom-common.git</developerConnection>
         <url>https://github.com/xh-dev-pom-mgmt/bom-common</url>
     </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- log library start -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!-- log library start -->
+
+        <!-- xethh library start -->
+        <dependency>
+            <groupId>me.xethh.utils</groupId>
+            <artifactId>DateUtils</artifactId>
+        </dependency>
+        <!-- xethh library end -->
+    </dependencies>
+
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
+            </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
